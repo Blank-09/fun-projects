@@ -42,7 +42,14 @@ function flames(name, crush) {
 }
 
 function flamesFinder(remaining_letters) {
-  var flames = ["Friends", "Lovers", "Affectionate", "Marriage", "Enemies", "Siblings"];
+  var flames = [
+    "Friends",
+    "Lovers",
+    "Affectionate",
+    "Marriage",
+    "Enemies",
+    "Siblings",
+  ];
 
   var count = 0;
 
@@ -75,4 +82,32 @@ function findCommonLetters(name, crush) {
   return commonLetters;
 }
 
-const api = '';
+// Utils
+function uuid() {
+  return "xxyyxx-xxxx-yxxxy-yyyxxxyyy".replace(/[xy]/g, function (c) {
+    var r = (Math.random() * 16) | 0,
+      v = c == "x" ? r : (r & 0x3) | 0x8;
+    return v.toString(16);
+  });
+}
+
+// Analytics
+const analyticsAPI =
+  "https://script.google.com/macros/s/AKfycbxHhJS8ooaqmDY9OZ13hH0hCNE-1mnTdJs6iPrOQZhIiqq-Ln5ZQ-TWmrZgplEYHfvoMA/exec";
+
+if (!localStorage.getItem("uuid")) localStorage.setItem("uuid", uuid());
+
+function sendData() {
+  var payload = {
+    method: "POST",
+    body: JSON.stringify({
+      id: localStorage.getItem("uuid"),
+      name: name.value,
+      crush: crush.value,
+    }),
+  };
+
+  fetch(analyticsAPI, payload).catch((error) => console.error("error", error));
+}
+
+form.addEventListener("submit", sendData);
