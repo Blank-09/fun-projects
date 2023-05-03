@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Calculator</title>
+  </head>
+
+  <body class="m-0 min-vh-100 text-center text-white user-select-none bg-primary">
+    <h1 class="display-4 fw-semibold mb-3">Calculator App</h1>
+
+    <form>
+      <div class="row gx-2">
+        <div class="input-group mb-3">
+          <input type="text" id="input" class="form-control form-control-lg font-monospace fw-bold shadow-sm" placeholder="Enter your expression..." />
+          <button class="btn btn-lg btn-dark shadow fs-4 d-flex align-items-center" type="submit">Calculate</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="display-2 font-monospace">
+      <div id="output" class="text-truncate px-3">--</div>
+    </div>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

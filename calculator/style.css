@@ -1,0 +1,14 @@
+body {
+  display: grid;
+  place-content: center;
+}
+
+::selection {
+  background: #377dff1a;
+  color: #377dff;
+}
+
+.input-group, #output {
+  width: 70vw !important;
+  max-width: 600px !important;
+}

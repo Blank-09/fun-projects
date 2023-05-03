@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLAMES - Find Your Relation</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://script.google.com/macros/s/AKfycbx8nmEDI6xeSGlxoJY_Dx7N1PqDum2P7ZPehbOQS0MhktDJC0oMAt4scE1DVE-epECvBg/exec" id="analytics" defer></script>
+  </head>
+  <body>
+    <div class="app">
+      <form class="form">
+        <h1 class="form__title">FLAMES</h1>
+        <div class="form__group">
+          <label for="name" class="form__label">Your Name</label>
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            class="form__input"
+            id="name"
+            required
+          />
+        </div>
+        <div class="form__group">
+          <label for="crush" class="form__label">Crush Name</label>
+          <input
+            type="text"
+            placeholder="Enter Crush Name"
+            class="form__input"
+            id="crush"
+            required
+          />
+        </div>
+        <button class="form__button" id="findRelation">Find Relation</button>
+      </form>
+
+      <div class="form result" id="result_div">
+        <p class="result__title" id="result">Results</p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
