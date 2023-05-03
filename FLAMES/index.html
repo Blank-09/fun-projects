@@ -4,13 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="FLAMES - Find Your Relation" />
+    <meta
+      property="og:description"
+      content="FLAMES is a popular game named after the acronym: Friends, Lovers, Affectionate, Marriage, Enemies, Sibling. This is a fun game to play with your friends and loved ones. Just enter two names and find the relationship between them." />
+    <meta property="og:image" content="https://png.pngtree.com/png-vector/20230215/ourmid/pngtree-fire-vector-logo-icon-png-image_6603549.png" />
+    <meta property="og:url" content="https://blank-09.github.io/fun-projects/FLAMES/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
     <title>FLAMES - Find Your Relation</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAACmpqb39/e3t7cfHx/Pz89hYWFtbW3j4+OcnJwnJyf4+Pj8/Pzx8fG8vLzd3d2BgYHW1tZPT096enrDw8Ps7OwwMDDJycmioqKwsLBJSUlcXFw9PT2MjIyVlZUVFRUbGxtUVFQ1NTUNDQ1+fn5DQ0MkJCRycnKWhZO4AAAHUklEQVR4nO2d21rqPBCGQRRBKAoLBXEHbtf9X+Ev/mUm3VCb9JvOpIv3zAND3geazWQy7fVOnDhxwhizxfr6XJX1TSLot3nd9vWZLG+E/K611ZjRQMAv+aut5bIT+Br/aEvlGKMFR9pGeVYzrOBGW6jIFvosDi60fUpYIg0NfoXf3AENH6jV1fpW0SnLGU5wQI2+ff+VaNIb3FNngD/TITW6wDUazM2hM39wbdJj+D7FNRrMdOv8oECcHQwvLBgODoafuDbZUGI96MvdoTcjXJu2DOmZeca1actwfujNLa5NW4a0RwXO+KYMZ4fOTICdMWVIG/FHYKOmDOkxBA40tgxXAgONKUOaDfvIQIYlw/WhL1tkVNGSIT2GwDWbLUOKiM2RrRoy5MfwHNmsIUPeqkIjpoYMn8kQ2qwhw9dDV4Db354lw4S+QuhAY8iQH8MNtF07hlcyA40hQw7cYntix5AEH7DtmjHkxxB6aGHIkOPdwIj+HjOGNBuig+9WDJ1DPuS5U8+O4YIEoVunnh1D6gcy3J1tWdmQkwnAA40Vw8EXGQ7BTRsxHJMgeqCxYsiP4VasaV1DzspChrt/MGLIP9J7dNM2DJ3HEBnu/sGG4TkbgjO+jBgmKzaEN27BcPHEgn/hrTc2vNnMR5eN4M39N9dYvV5Tw+nVqg9lhc/0bmKYvGD1+gIjaSPDBfj766MjpU0NBbLf4euZRoYCguAQVEPDYVVXg7jAD6NNDJ39HIane6nMwUDDebZ7o0Ysn8/GcveBwgzvXL97ydtKzQkzXLLfG3ypDCbIcMqCO+uCYYZrNhRYhIAJMuRx5kmuZyiCDB/JUGKZBSbI8JMMsQfSIoQYTnnJLbQOQRJiOJicDC1xMizjZGiLk2EZ/5RhR2f85I0MPwS7BiJo1cZR6jfbu989QYaXZIhNyRYhyJATJQVKPKAJMnRDiTsLN6SrCIvT7BzF/tK2Y5ih+zP9+edJAE/LDTqzpIwww6QPYiRVU4gJjAifVXXbixcps0JXPc8tcFV70Jl6eUINZ7iDC+SF0RKCT9fG7zBF2cVt+AnpGPctig43DU65cSXCgJVMijTKxRg+VPXbA8k1Q8N8msV8UtXzukgONo0zhpK727OrEF6c53iFlcqgmfXlpOMIfopqXttb5w0fO29ISz/JY0hNQyrWYnssbQDnPkuu2zQNOfdZctmmaSh0AT+HpiENpejrahk0DekrFM13UDTkopTo62oZFA0578jq/hD20fhbJKUf074hbaBFN8CahpSVI5P9fEDPkKPKViNRTeHb27LnHnqGVJZ5K5uiqmdIazbhDE49Q1qzyQ40eoac7iCcz6FmyOn+wgesaoY8lAp/kJoh1aORjJXuUTP8OHywdKq4miEdeUgnjmkZ8qUU6ZN8LUOOs0lXu9cypDibaIxmj5YhrdnEsxu1DGmgEY3R7NEybGtFo2bIazbxxC8lQ7oJLn/5TcmQjn8vxT9KyZBODsXT2pQME6ohKH8HVcewrSjUHh1DzsKQTxNXMeSaGlv5D/MyTMZDANfOCxdbuEfsY3gOyfDK0MJdBg9DgXot+LpXjQx3cEHhaLev4aKqr2GgC3k2NMTX3Fm3Iaj4HbZ1ncjjOcSW9pJfkKZ4GOJ+ppPHTXtFX3zmw2HJNZLtfDMc+9LqNsZv1ZbMvhk4r5z96OQd0gG/Z174uguEAEP+rUpfWYLgb8g7nyf7P9FegCE/hNs27kc2x9fQqWls+3Is4WvIBXEjKKfwg6chl6KLoJrC//gZcjqhbLYdEi9DXnxfmC+1R/gYOiU9Ixll9vgY8stuYhll9ngY8uUB4TwtLPUNORD1EMVa5kBtQ8G3iMhS19Ap7t9K/AhHXUMuunPVUs9Q1DTkt6JFsWNyqWfIIZqVdIIPnFqGTuln80WTCtQy5IqsEVSgy1PHkBIlo4jL5KlhuCHB1zZ7huJ3Q95QfOm+fC6QXw1n/OrFiDYUDr8acuxQPMdOht8MuTh5VBsKh18M+UL5Z1QbCodqw5uYp/qUSsOEwxbtnNdKUGnIo0xr55l4qgw5bCGfIylHhSGHLb7iiR0WOW7ojDLy5RsFOWrIKaBRxQ6LHDXkCkfRnFCUc8wwtnPQ4xwxdLL04oodFik3dIKj8U71KaWGzigT8VSfUmrIwVGRNxK2S5khr2VWUe7qs5QYOqNM1FN9StHQGWXinupTCoZTzumKdVefpWDIa5kH3Z6hyBvyKBP9VJ+SM3RGmein+pSsobNjin+qT8kYOtHfmHf1WTKGHJeZxLyrz8KGU+eMqRNTfQobum906MRUn0JaKyc/vRtTfQoZ7vhdB7Hv6rOUvGzkvSNTfUqJof1X/HpRNOzMVJ9SMIzyrL6KvOGkA7v6LHnDOM/qq8gZdmmqT8katnG3um0yhhG8Kd2fjGG0Z/VVuIYRpuXVwDGMMS2vBmzYuak+hfZM793Z1edYdfs32qN34HXhDOYY432O82u39oR51rednAhPnDjRBv8BtV9cyj6c6WEAAAAASUVORK5CYII="
+      type="image/x-icon"
+    />
   </head>
   <body>
     <div class="app">
       <form class="form">
-        <h1 class="form__title">FLAMES</h1>
+        <h1 class="form__title">
+          <img height="24" style="transform: translate(15px, 2px);" src="data:image/png;base64,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" />
+          LAMES
+        </h1>
         <div class="form__group">
           <label for="name" class="form__label">Your Name</label>
           <input
@@ -34,7 +50,7 @@
         <button class="form__button" id="findRelation">Find Relation</button>
       </form>
 
-      <div class="form result" id="result_div">
+      <div class="form result" id="result_div" style="display: none">
         <p class="result__title" id="result">Results</p>
       </div>
     </div>
