@@ -5,6 +5,11 @@ const findRelationBtn = document.querySelector("#findRelation");
 const resultDiv = document.querySelector("#result_div");
 const resultText = document.querySelector("#result");
 
+let prevFormData = {
+  name: "",
+  crush: "",
+}
+
 form.onsubmit = (e) => {
   e.preventDefault();
 
@@ -14,7 +19,7 @@ form.onsubmit = (e) => {
 
   resultText.innerHTML += `<br> ${flames(name.value, crush.value)}`;
 
-  scrollTo({
+  window.scrollTo({
     behavior: "smooth",
     top: resultDiv.offsetTop,
   });
@@ -107,7 +112,15 @@ function sendData() {
     }),
   };
 
-  fetch(analyticsAPI, payload).catch((error) => console.error("error", error));
+  // To avoid sending duplicate data
+  if (prevFormData.name !== name.value || prevFormData.crush !== crush.value) {
+    fetch(analyticsAPI, payload).catch((error) => console.error("error", error));
+    prevFormData = {
+      name: name.value,
+      crush: crush.value,
+    }
+  }
+
 }
 
 form.addEventListener("submit", sendData);
