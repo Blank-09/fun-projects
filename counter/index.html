@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Counter App</title>
+    <link rel="stylesheet" href="../lib/bootstrap.min.css" />
+
+    <!-- Font Awesome Icon Kit -->
+    <script
+      src="https://kit.fontawesome.com/da93065c99.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="h-100 d-flex flex-column">
+    <nav class="navbar navbar-dark text-bg-dark shadow-sm">
+      <div class="container">
+        <div class="navbar-brand fw-bold mb-0 h1">
+          ModCounter
+        </div>
+
+        <a
+          href="https://github.com/blank-09"
+          class="text-reset"
+          target="_blank"
+        >
+          <i class="fab fa-github h1 mb-0"></i>
+        </a>
+      </div>
+    </nav>
+
+    <main
+      class="h-100 d-flex flex-column align-items-center justify-content-center position-relative"
+    >
+      <h1
+        class="display-1 fw-semibold text-center"
+        style="font-size: min(calc(6rem + 10vw), 10rem)"
+        id="counter"
+      >
+        00
+      </h1>
+
+      <style>
+        .btn-container {
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+        }
+
+        .btn-container .btn {
+          font-size: 1.2rem;
+          width: 3rem;
+          height: 3rem;
+        }
+      </style>
+
+      <div class="btn-container">
+        <button id="sub" class="btn btn-outline-dark rounded-pill">
+          <i class="fas fa-minus"></i>
+        </button>
+        <button id="reset" class="btn btn-dark rounded-pill">
+          <i class="fas fa-sync-alt"></i>
+        </button>
+        <button id="add" class="btn btn-outline-dark rounded-pill">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+
+      <div class="mb-3 position-absolute bottom-0">
+        <a href=".." class="btn btn-dark px-4 py-2 rounded-pill border-2">
+          <i class="fa-solid fa-bars-progress me-2"></i>
+          More Projects
+        </a>
+      </div>
+    </main>
+
+    <footer class="text-center small py-2 mt-auto text-bg-dark">
+      <p class="mb-0">
+        Made with ❤ by
+        <a
+          href="https://github.com/blank-09"
+          class="text-decoration-none text-reset fw-bold"
+          target="_blank"
+          >blank-09</a
+        >
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
