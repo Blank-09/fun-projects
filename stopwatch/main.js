@@ -1,6 +1,7 @@
 const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 const milliseconds = document.getElementById('milliseconds');
+const animateBg = document.getElementById('animate-bg');
 
 // Control Buttons
 const playPauseBtn = document.getElementById('play-pause');
@@ -21,6 +22,7 @@ function playPauseTimer() {
   if (!interval) {
     interval = setInterval(startTimer, 10);
     changeIcon('pause-outline');
+    animateBg.classList.add('animate');
   } else {
     clearInterval(interval);
     interval = null;
@@ -45,6 +47,7 @@ function resetTimer() {
   milliseconds.textContent = '00';
 
   changeIcon('play-outline');
+  animateBg.classList.remove('animate');
 }
 
 function startTimer() {
